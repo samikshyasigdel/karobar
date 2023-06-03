@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Omnifood is an AI-powered food
-    subscription thet will make you eat healthy again, 365 days per year. It's tailored 
-    to your personal tastes and nutritional needs."
+      content="karobar helps in accounting"
     />
 
     <!-- Always include this line of code -->
@@ -23,7 +21,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/general.css" />
+    
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <script
@@ -39,18 +37,29 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="script.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
     <title>Karobar App - Nepali Digital Khata</title>
   </head>
   <body>
-    <header class="header nav-open">
-      <a href="#">
+    <header class="header sticky nav-open" id="head">
+      <a href="#head">
         <img class="logo" alt="Karobar logo" src="img/logo.png" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#home">होम</a></li>
-          <li><a class="main-nav-link" href="#features">फिचरहरु</a></li>
+          <li><a class="main-nav-link" href="#feature">फिचरहरु</a></li>
           <li>
             <a class="main-nav-link nav-cta" href="https://onelink.to/karobar"
               >डाउनलोड गर्नुहोस्</a
@@ -60,10 +69,10 @@
           <li>
             <select class="main-nav-link select" name="select">
               <button>
-                <span>
+                
                   <ion-icon class="icon" name="earth-outline"></ion-icon>
-                </span>
-                <span>नेपाली</span>
+                
+                नेपाली
                 <option value="English">नेपाली</option>
                 <option value="English">English</option>
               </button>
@@ -74,7 +83,7 @@
     </header>
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="home">
         <div class="hero">
           <div class="hero-text">
             <h1 class="heading-primary">
@@ -205,74 +214,399 @@
 
         </div>
       </section>
-      <section class="section-promotion">
-        <section class="carousel" aria-label="Gallery">
-          <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <!--         <a href="#carousel__slide4"
-               class="carousel__prev">Go to last slide</a> -->
-                <!--         <a href="#carousel__slide2"
-               class="carousel__next">Go to next slide</a> -->
-              </div>
-            </li>
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <!--       <a href="#carousel__slide1"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3"
-             class="carousel__next">Go to next slide</a> -->
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <!--       <a href="#carousel__slide2"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide4"
-             class="carousel__next">Go to next slide</a> -->
-            </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <!--       <a href="#carousel__slide3"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1"
-             class="carousel__next">Go to first slide</a> -->
-            </li>
-          </ol>
-          <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide1" class="carousel__navigation-button"
-                  >Go to slide 1</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide2" class="carousel__navigation-button"
-                  >Go to slide 2</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide3" class="carousel__navigation-button"
-                  >Go to slide 3</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide4" class="carousel__navigation-button"
-                  >Go to slide 4</a
-                >
-              </li>
-            </ol>
-          </aside>
-        </section>
+      <section class="section-promotion" id="feature">
+        
+
+          
+            <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/1.png"
+            class="d-block carousel-image"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/2.png"
+            class="d-block carousel-image"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/3.png"
+            class="d-block carousel-image"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev "
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next "
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators mb-0 position-relative mt-3">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active rounded-circle"
+          aria-current="true"
+          aria-label="Slide 1"
+          style="background-clip: border-box"
+        ></button>
+        <button
+          type="button"
+          style="background-clip: border-box"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          class="rounded-circle"
+        ></button>
+        <button
+          type="button"
+          style="background-clip: border-box"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class="rounded-circle"
+        ></button>
+      </div>
     
+      </div>
+          </div>
+          <div class="promotion-text">
+            <h2 class="heading-secondary">कारोबार एपको फिचरहरु</h2>
+            <p class="carousel-text">हामीले कारोबार एप नेपाली व्यवसायहरूलाई मोबाइलबाटै आफ्नो खाता मिलाउन सजिलो होस् भनि बनाएका हौ। कारोबार एपको फिचरहरु:</p>
+            <div class="feature-list">
+              <ul class="list">
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;स्टक म्यानेज गर्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;खरिद र बिक्रीको रेकर्ड राख्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;सजिलो बिलिङ्ग</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;15+ रिपोर्टहरू हेर्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;एक्सलबाट डाटा ईम्पोर्ट</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;एप लक हाल्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;पार्टीहरू म्यानेज गर्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;इनभ्वाइस बनाउनुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;व्यापारको गतिविधि थाहा पाउनुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;आमदानी र खर्च रेकर्ड गर्नुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;नेपाली र अंग्रेजी दुबैमा चलाउनुहोस्</span></li>
+                <li class="lists"><ion-icon class="check" name="checkmark-sharp"></ion-icon><span>&nbsp;आफ्नै थिम् राख्नुहोस्</span></li>
+              </ul>
+
+            </div>
+          
+        </div>
+        
+        
         
       </section>
 
-      <section class="section-testimonials grid grid--2-cols">
-        <div class="testimonial1">
-          testimonials
+      <section class="section-testimonials">
+        <h2 class="heading-secondary testimonial-heading">कारोबार एपले व्यवसायीलाई कसरी <span>मद्दत गरिरहेको छ</span></h2>
+        <div class="testimonial grid grid--2-cols">
+
+          <div class="testimonial1">
+            <span class="quotation">&#8220;</span><br/>
+            <p class="testimonial-text">कारोबार मोबाइल एपले पार्टीको कारोबारहरु रेकर्ड गर्न धेरै सजिलो बनाएको छ।
+              मैले यो एप केहि महिनादेखि प्रयोग गरिरहेको छु र यस्ले मेरो पसलको कारोबारहरुलाई साँच्चै नै डिजिटल बनाएको छ।
+          </p>
+          <div class="customer">
+            <!-- <div class="customer-img"> -->
+              <img src="img/profile1.png" alt="customer photo" class="profile">
+            <!-- </div> -->
+            <div class="customer-name">
+              <h3 class="name"><span>राम बाबु शाह</span></h3>
+              <p class="company">शाह ट्रेडर्स</p>
+              <p class="location">मिठुअवा-५ रौतहट</p>
+            </div>
+          </div>
         </div>
-        <div class="testimonial2">part2</div>
+        
+        <div class="testimonial2">
+          <span class="quotation">&#8220;</span><br/>
+          <p class="testimonial-text">मैले मेरो स्टेशनरीमा खरिद बिक्री रेकर्ड गर्न र स्टकहरू
+            म्यानेज गर्न कारोबार एप प्रयोग गर्दै आएको छु । कारोबार एपले यो सबै गर्न निकै नै सजिलो बनाइदिएको छ ।
+          </p>
+          <div class="customer">
+            <!-- <div class="customer-img"> -->
+              <img src="img/profile2.png" alt="customer photo" class="profile">
+              <!-- </div> -->
+              <div class="customer-name">
+                <h3 class="name"><span>नरेन राया</span></h3>
+                <p class="company">नरेन स्टेशनरी</p>
+                <p class="location">सुन्दरहरैचाँ-७ गोठगाउँ</p>
+              </div>
+            </div>
+
+        </div>
+      </div>
       </section>
-    </main>
-  </body>
+      <section class="section-video">
+        <h2 class="heading-secondary media">मिडिया कभरेज</h2>
+        <div class="media-coverage">
+
+          <div class="video">
+            <iframe data-v-38ab8dfa="" width="100%" height="530" loading="lazy" class="youtube" src="https://www.youtube.com/embed/K7NFAusigP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <a class="video-text" href="https://www.youtube.com/watch?v=K7NFAusigP0" target="_blank">
+              टेकपानामा कारोबार एपको भिडिओ<br/>
+            </a>
+            <img src="img/techpana.png" class="techpana-logo" alt="techpana"/>
+          </div>
+            
+
+            
+        <ul class="box">
+          <li class="box-1">
+            <a class="box-text" href="https://ictsamachar.com/news-details/11387/2022-06-01" target="_blank">
+              आफ्नो व्यवसायलाई डिजिटल बनाउने एप ‘कारोबार’, अफलाइनमा पनि
+              प्रयोग गर्न सकिने<br/>
+            </a>
+            <img src="img/ict.png" class="company-logo" alt="ict samachar"/>
+          </li>
+          <li class="box-2">
+            <a class="box-text" href="https://techsathi.com/popular-mero-karobar-rebrands-itself-to-karobar-app" target="_blank">
+              
+              Popular Mero Karobar rebrands itself to “Karobar” App:
+              Digital Khata for your Business<br/>
+            
+            </a>
+            <img src="img/TechSathi.png" class="company-logo" alt="tech sathi"/>
+          </li>
+          <li class="box-3">
+            <a class="box-text" href="https://www.techpana.com/2022/134140/" target="_blank">
+              
+              व्यवसायको हिसाबकिताब राख्न सघाउने नेपाली एप<br/>
+              
+            </a>
+            <img src="img/techpana.png" class="company-logo" alt="techpana"/>
+          </li>
+        </ul>
+      </div>
+      </section>
+      <section class="section-about">
+        <h2 class="heading-secondary about">कारोबार एपको बारेमा</h2>
+        <div class="queries">
+          <div class="question-wrapper">
+
+            <button type="button" class="collapsible">कारोबार एप के हो ?</button>
+            <div class="content">
+              <p>
+                कारोबार एप नेपाली व्यापारीहरुको लागी 
+                बनाइएको आफ्नो व्यापारको खाता रेकर्ड गर्ने र स्टक म्यानेज गर्ने मोबाईल एप हो ।
+              </p>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <button type="button" class="collapsible">कारोबार एप iOS मा पनि छ ?</button>
+            <div class="content">
+              <p>
+                कारोबार एप iOS मा पनि छ र यस्लाई Appstore बाट डाउनलोड गर्नसक्नुहुन्छ ।
+              </p>
+            </div>
+          </div>
+          <div class="question-wrapper">
+
+            <button type="button" class="collapsible">यस्मा डाटा सेक्युरिटी र ब्याकप के कस्तो छ ?</button>
+            <div class="content">
+              <p>
+                हजुरको डाटा क्लाउडमा सुरक्षित रूपमा ब्याकप भइराख्छ र कारोबार एपमा हजुरले सेटिङबाट एप लक पनि हाल्न सक्नुहुन्छ।
+              </p>
+            </div>
+          </div>
+          <div class="question-wrapper">
+
+            <button type="button" class="collapsible">कारोबार एप को कस्ले चलाउन सकिन्छ ?</button>
+            <div class="content">
+              <p>
+                सबै नेपाली व्यापारीहरुले कारोबार एपबाट आफ्नो व्यवसायको खाता रेकर्ड र स्टक म्यानेज गर्न सक्नुहुन्छ ।
+              </p>
+            </div>
+          </div>
+          <div class="question-wrapper">
+
+            <button type="button" class="collapsible">कारोबार एप चलाउन कती पैसा तिर्नु पर्छ ?</button>
+            <div class="content">
+              <p>
+                कारोबार एप हजुरले नि:शुल्क चलाउन सक्नुहुन्छ। यसबाट हामीले कारोबार एपमार्फत
+                 १ लाख+ नेपाली व्यवसायहरूलाई डिजिटल बनाउन मद्दत गर्ने लक्ष्य राखेका छौं।
+                
+              </p>
+            </div>
+          </div>
+          <div class="question-wrapper">
+
+            <button type="button" class="collapsible">कारोबार एप आधिकारिक बिलिङको रूपमा प्रयोग गर्न सकिन्छ ?</button>
+            <div class="content">
+              <p>
+                कारोबार अकाउंटिंग एप मात्र हो र यस्बाट बनाइएको इनभ्वाइसहरू आधिकारिक बिलिङको रूपमा प्रयोग गर्न सकिँदैन।
+              </p>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="section-details">
+
+        
+        <div class="contacts">
+          <ul class="contact-list">
+            <h2 class="heading-secondary">सम्पर्क गर्नुहोस्</h2>
+            <li class="contact">
+              <ion-icon class="contact-icon" name="mail-sharp"></ion-icon>
+              <div class="details">
+                <p class="detail-name">इमेल</p>
+                <a href="#" class="contact-link" target="_blank">contact@karobarapp.com</a>
+              </div>
+            </li>
+            <li class="contact">
+              <ion-icon class="contact-icon" name="call-sharp"></ion-icon>
+              <div class="details">
+                <p class="detail-name">फोन नम्बर</p>
+                <a href="#" class="contact-link" target="_blank">+977 9761812176, 9828134832</a>
+              </div>
+            </li>
+            <li class="contact">
+              <ion-icon class="contact-icon" name="location-sharp"></ion-icon>
+              <div class="details">
+                <p class="detail-name">ठेगाना</p>
+                <a href="#" class="contact-link" target="_blank">Sanepa, Lalitpur</a>
+              </div>
+            </li>
+            
+            
+          </ul>
+          <div class="form">
+            <p class="message">हामीलाई म्यासेज पठाउनुहोस्</p>
+            <form class="cta-form" name="sign-up" netlify>
+              
+              <ul class="form-lists">
+                <li class="fullname form-list "><label for="full-name">नाम</label></li>
+                <li class="form-list"><input type="text" 
+                autocomplete="on"
+                placeholder="हजुरको नाम हाल्नुहोस्" 
+                class="input"></li>
+                <!-- <input id="full-name" 
+                  type="text"
+                  placeholder="हजुरको नाम हाल्नुहोस्"
+                  name="full-name"
+                  required/>  
+                -->
+            </ul>
+
+            
+            <ul class="form-lists">
+              <li class="phone form-list"><label for="phone-number">फोन नम्बर</label></li>
+              <li class="form-list"><input type="number" 
+              autocomplete="on" 
+              placeholder="हजुरको फोन नम्बर हाल्नुहोस्"
+              class="input" required/> </li>
+
+              <!-- <input id="contact-number" 
+                type="number" 
+                placeholder="me@example.com"
+                name="number"
+                required>  -->
+              </ul> 
+              
+              <ul class="form-lists">
+                <li class="sendmessage form-list"><label for="send-message">म्यासेज</label></li>
+                <li class="form-list"><textarea placeholder="म्यासेज लेख्नुहोस्"
+                class="textarea" required/></textarea></li>
+                <!-- <input id="text-message" 
+                  type="text"
+                  placeholder="म्यासेज लेख्नुहोस्"
+                  name="text-message"
+                  required/>   -->
+                </ul>
+                <ul class="form-lists">
+                  <li class="form-list">
+                    <button class="send">
+                      म्यासेज पठाउनुहोस्
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            </section>
+            <section class="section-footer">
+              <div class="footer">
+
+                <div class="footer-media">
+                  <p class="medias">लिङ्कहरू:</p>
+                  <ul class="media-lists">
+                   <li class="media-icon">
+                    <a href="https://www.youtube.com/c/karobarapp" 
+                    class="media-i" target="_blank">
+                    <ion-icon class="youtube-i" name="logo-youtube">
+                    </ion-icon>
+                    </a> 
+                  </li>
+                  <li class="media-icon">
+                    <a href="https://www.facebook.com/karobarapp" 
+                    class="media-i" target="_blank">
+                    <ion-icon  class="facebook" name="logo-facebook"></ion-icon>
+                  </a> 
+                </li>
+                  <li class="media-icon">
+                    <a href="https://www.instagram.com/karobarapp/" 
+                    class="media-i" target="_blank">
+                    <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+                  </a> 
+                </li>
+                  <li class="media-icon">
+                    <a href="https://www.tiktok.com/@karobarapp" 
+                    class="media-i" target="_blank">
+                    <ion-icon  class="tiktok" name="logo-tiktok"></ion-icon>
+                  </a> 
+                </li>
+                  <li class="media-icon">
+                    <a href="https://www.linkedin.com/company/karobar-app/" 
+                    class="media-i" target="_blank">
+                    <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+                  </a> 
+                </li>
+                  <li class="media-icon">
+                    <a href="https://twitter.com/karobarapp/" 
+                    class="media-i" target="_blank">
+                    <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+                  </a> 
+                </li>
+
+                </ul>
+              </div>
+              <div class="footer-nav">
+                <ul class="main-nav-list">
+                  <li><a class="main-nav-link footer-nav" href="#home">होम</a></li>
+                  <li><a class="main-nav-link footer-nav" href="#privacy-policy">प्राइभेसी पोलीसी</a></li>
+                  <li><a class="main-nav-link footer-nav" href="#privacy-policy">नियम र सर्तहरू</a></li>
+                </ul>
+              </div>
+            </div>
+            </section>
+          </main>
+        </body>
 </html>
+              
+
+          
