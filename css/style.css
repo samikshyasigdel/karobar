@@ -727,6 +727,9 @@ body {
   align-items: center;
   gap: 2.8rem;
 }
+.media-f {
+  display: flex;
+}
 .medias {
   font-size: 2.4rem;
 }
