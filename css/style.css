@@ -127,9 +127,9 @@ body {
   color: #00b98d;
   border: 1px solid #00b98d;
 }
-.margin-right-sm {
+/* .margin-right-sm {
   margin-right: 1.8rem !important;
-}
+} */
 /***********************/
 /* HEADER */
 /**********************/
@@ -240,7 +240,10 @@ body {
 .hero-img.grid--center-v {
   width: 100%;
 }
-
+.hero-f {
+  display: flex;
+  align-items: center;
+}
 .download-app {
   cursor: pointer;
   height: 5.8rem;
@@ -272,6 +275,18 @@ body {
   height: 30rem;
   background-color: #e6f8f4;
 }
+
+.karobar-stats {
+  background-color: #f5fcf9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url(/_img/nepal.png);
+  background-position: 100%;
+  background-size: 7rem 8.5rem;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  margin-top: 2rem;
+}
 .add {
   font-weight: 800;
   height: 2.4rem;
@@ -282,7 +297,7 @@ body {
 }
 
 .feature {
-  position: absolute;
+  /* position: absolute; */
   grid-template-columns: repeat(4, 1fr);
   row-gap: 0rem;
   column-gap: 0rem;
@@ -305,13 +320,13 @@ body {
   color: #333;
   font-weight: 500;
 }
-.flag {
+/* .flag {
   position: relative;
   z-index: 0;
   left: 100rem;
   top: -7rem;
   height: 15rem;
-}
+} */
 /* .flag {
   height: 13rem;
 } */
@@ -367,9 +382,10 @@ padding: 9.6rem 3.6rem; */
 }
 .carousel.slide {
   max-width: 30rem;
+  margin: auto;
 }
 .carousel-image {
-  max-width: 100%;
+  max-width: 80%;
   /* text-align: center; */
   margin: auto;
 }
@@ -385,6 +401,25 @@ padding: 9.6rem 3.6rem; */
 }
 .check {
   color: #00b98d;
+}
+.carousel-indicators.carousel-btn button {
+  /* box-sizing: content-box; */
+  /* flex: 0 1 auto; */
+  width: 15px;
+  height: 15px;
+  /* padding: 0; */
+  margin-right: 5px;
+
+  /* text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box; */
+  /* border-width: 0; */
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  /* opacity: 0.5;*/
+  /* transition: opacity 0.6s ease; */
+  margin-left: 5px;
 }
 .lists {
   list-style: none;
@@ -416,6 +451,7 @@ padding: 9.6rem 3.6rem; */
 .testimonial2 {
   border: 1px solid #aaa;
   border-radius: 0.9rem;
+  padding: 2rem;
   box-shadow: 0.6rem 0.6rem rgba(0, 0, 0, 0.08);
   /* box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.08); */
 }
@@ -576,21 +612,22 @@ padding: 9.6rem 3.6rem; */
 
 .collapsible {
   border: 1px solid #aaa;
+  border-radius: 0.4rem;
   background-color: #f7f7f7;
   color: #333;
   cursor: pointer;
-  padding: 1.2rem;
+  padding: 1.8rem;
   width: 100%;
   /* border: none; */
   text-align: left;
   outline: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   /* margin-bottom: 3.2rem; */
 }
 .collapsible:after {
   content: "▼";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333;
   float: right;
   margin-left: 4.2rem;
@@ -616,7 +653,7 @@ padding: 9.6rem 3.6rem; */
   color: #333;
   padding: 0 1.8rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: inherit;
 }
 

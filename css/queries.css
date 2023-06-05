@@ -2,11 +2,11 @@
   .container {
     padding: 6rem 7.8rem;
   }
-  .flag {
+  /* .flag {
     height: 12rem;
     left: 80rem;
     top: -15rem;
-  }
+  } */
   .logo {
     height: 2rem;
   }
@@ -174,11 +174,11 @@
     margin-bottom: 1rem;
   }
   .collapsible {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1rem;
   }
   .collapsible:after {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 3.6rem;
   }
   .content {
@@ -186,7 +186,7 @@
   }
   .content > p {
     padding: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
   }
   .contacts.grid.grid--2cols {
@@ -320,13 +320,13 @@
     row-gap: 1.6rem;
     column-gap: 15rem;
   }
-  .flag {
-    /* position: relative; */
+  /* .flag {
+    position: relative;
     z-index: 0;
     left: 60rem;
     top: -10rem;
     height: 10rem;
-  }
+  } */
   .carousel-text {
     font-size: 1.2rem;
   }
@@ -462,7 +462,7 @@
     margin-bottom: 1.8rem;
   }
   .container {
-    max-width: 180rem;
+    /* max-width: 180rem; */
     padding: 3.2rem 3.6rem;
   }
   .testimonial,
@@ -474,17 +474,17 @@
     height: 25rem;
   }
   .sticky .header.container {
-    padding: 4rem 9.6rem;
+    padding: 4rem 4.6rem;
   }
   .feature {
-    /* grid-template-columns: 0.5fr, 1fr; */
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2.6rem;
     column-gap: 12rem;
   }
-  .flag {
+  /* .flag {
     height: 10rem;
     left: 45rem;
-  }
+  } */
   .heading-featured-in {
     font-size: 2rem;
   }
@@ -574,7 +574,7 @@
     gap: 0.8rem;
   }
   .container {
-    padding: 2.4rem 1.2rem;
+    padding: 5.2rem 2.2rem;
   }
   .main-nav-link.nav-cta:link,
   .main-nav-link.nav-cta:visited {
@@ -582,14 +582,14 @@
     font-size: 1rem;
   }
   .main-nav-link.select {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
   }
   .main-nav-link.nav-cta:link {
     font-size: 1rem;
   }
   .logo {
-    height: 1.5rem;
+    height: 1.6rem;
   }
   .step-description {
     font-size: 1.6rem;
@@ -609,19 +609,20 @@
   .heading-secondary {
     font-size: 2rem;
   }
-  .margin-right-sm {
+  /* .margin-right-sm {
     margin-left: 5.5rem !important;
     margin-right: 5.5rem !important;
     margin-bottom: 2.4rem;
-  }
+  } */
   .btn--full:link,
   .btn--full:visited {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem 1rem;
+    /* margin-bottom: 1.2rem; */
   }
   .btn--outline:link,
   .btn--outline:visited {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem 1rem;
   }
   .hero-description {
@@ -651,6 +652,13 @@
   .video-text:visited {
     font-size: 1.2rem;
   }
+  .video {
+    height: 95%;
+  }
+  .techpana-logo {
+    height: 3.4rem;
+    margin-bottom: 3.2rem;
+  }
   .box-text:link,
   .box-text:visited {
     font-size: 1.2rem;
@@ -673,26 +681,53 @@
   .main-nav-link.footer-nav {
     font-size: 1.2rem;
   }
-  .feature {
+  .hero-img-box {
+    max-width: 70%;
+    margin: auto;
+  }
+  .chat {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .video-text {
+    margin-bottom: 3.2rem;
+  }
+  /* .feature {
     row-gap: 1.8rem;
     column-gap: 4rem;
   }
   .flag {
     left: 35rem;
-  }
+  } */
 }
 @media (max-width: 441px) {
-  .feature {
+  /* .feature {
     row-gap: 1rem;
     column-gap: 2rem;
-  }
-  .flag {
+  } */
+  /* .flag {
     left: 25rem;
-  }
+  } */
   .heading-featured-in {
     font-size: 1.4rem;
   }
   .feature-description {
     font-size: 1rem;
+  }
+  .main-nav-link.select {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .hero-f {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.2rem;
+  }
+  .btn--full .btn--outline {
+    width: 50rem;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2.8rem;
   }
 }
