@@ -8,13 +8,19 @@ span::selection {
   background: #00b98d;
 }
 html {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 62.5%;
+  overflow-x: hidden;
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   /* max-width: 1440px;
   display: flex;
   justify-content: center;
-  margin: auto; */
+  margin: auto; 
   font-size: 62.5%;
   overflow-x: hidden;
 
@@ -187,13 +193,13 @@ body {
 /* STICKY NAVIGATION */
 .sticky .header.container {
   position: fixed;
-  top: -1.5rem;
+  top: 0rem;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 6rem;
-  /* padding: 0 5.6rem; */
+  /* padding:  5.6rem; */
   /* padding-top: 0;
   padding-bottom: 0;
   padding-left: 3.6rem; */
@@ -340,13 +346,13 @@ body {
 /***********************/
 /* PROMOTION SECTION */
 /**********************/
-/* .section-promotion.container {
-  display: flex;
+/* .section-promotion.container { */
+/* display: flex;
   gap: 8rem;
-  /* justify-content: space-between; */
-/* padding: 9.6rem 3.6rem; */
-/* background-color: #e6f8f4;
-} */
+  justify-content: space-between;
+padding: 9.6rem 3.6rem; */
+/* background-color: #e6f8f4; */
+/* } */
 /* .text-img {
   display: flex;
   gap: 9.6rem;
@@ -385,12 +391,14 @@ body {
   font-size: 1.8rem;
   color: #333;
 }
+.section-promotion {
+  background-color: #baf0e2 !important;
+}
 .section-promotion.container {
   display: flex;
   gap: 8rem;
   /* justify-content: space-between; */
   padding: 0rem 3.6rem;
-  background-color: #e6f8f4;
 }
 
 /***********************/

@@ -318,9 +318,9 @@
   .flag {
     /* position: relative; */
     z-index: 0;
-    left: 55rem;
-    top: -20rem;
-    height: 20rem;
+    left: 75rem;
+    top: -10rem;
+    height: 10rem;
   }
   .carousel-text {
     font-size: 1.2rem;
@@ -440,7 +440,12 @@
   .carousels.grid.grid--2-cols {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .main-nav-link.a {
+    display: none;
+  }
+  .main-nav-link.nav-cta {
+    display: none;
+  }
   .list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -461,7 +466,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .section-featured.container {
-    height: 20rem;
+    height: 25rem;
+  }
+  .sticky .header.container {
+    padding: 4rem 9.6rem;
   }
   .feature {
     /* grid-template-columns: 0.5fr, 1fr; */
