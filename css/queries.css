@@ -2,6 +2,11 @@
   .container {
     padding: 6rem 7.8rem;
   }
+  .flag {
+    height: 12rem;
+    left: 80rem;
+    top: -15rem;
+  }
   .logo {
     height: 2rem;
   }
@@ -312,13 +317,13 @@
   .feature {
     /* position: absolute; */
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 3.6rem;
-    column-gap: 4.2rem;
+    row-gap: 1.6rem;
+    column-gap: 15rem;
   }
   .flag {
     /* position: relative; */
     z-index: 0;
-    left: 75rem;
+    left: 60rem;
     top: -10rem;
     height: 10rem;
   }
@@ -474,10 +479,11 @@
   .feature {
     /* grid-template-columns: 0.5fr, 1fr; */
     row-gap: 2.6rem;
-    column-gap: 0;
+    column-gap: 12rem;
   }
   .flag {
-    height: 9rem;
+    height: 10rem;
+    left: 45rem;
   }
   .heading-featured-in {
     font-size: 2rem;
@@ -666,5 +672,27 @@
   }
   .main-nav-link.footer-nav {
     font-size: 1.2rem;
+  }
+  .feature {
+    row-gap: 1.8rem;
+    column-gap: 4rem;
+  }
+  .flag {
+    left: 35rem;
+  }
+}
+@media (max-width: 441px) {
+  .feature {
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+  .flag {
+    left: 25rem;
+  }
+  .heading-featured-in {
+    font-size: 1.4rem;
+  }
+  .feature-description {
+    font-size: 1rem;
   }
 }
