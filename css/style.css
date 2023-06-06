@@ -243,6 +243,7 @@ body {
 .hero-f {
   display: flex;
   align-items: center;
+  gap: 1.8rem;
 }
 .download-app {
   cursor: pointer;
@@ -267,6 +268,7 @@ body {
   right: 0;
   left: 90%;
 }
+
 /***********************/
 /* FEATUREDIN  SECTION */
 /**********************/
