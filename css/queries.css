@@ -78,6 +78,10 @@
   .heading-featured-in {
     font-size: 2.2rem;
     margin-bottom: 1.6rem;
+    text-align: center;
+  }
+  .feature.grid {
+    text-align: center;
   }
   .feature-description {
     font-size: 1.2rem;
